@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  base: '/ACM-W/',   // 👈 VERY IMPORTANT for Vercel sub-path
   plugins: [react()],
-  base: '/ACM-W/', // Ensure Vite knows the app is served under /ACM-W/
-});
+})
