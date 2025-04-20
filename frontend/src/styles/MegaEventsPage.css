@@ -1,0 +1,84 @@
+#Mevents{
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: lightgray;
+    padding: 15px;
+    margin-top: 80px;
+}
+.events-container {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 20px;
+}
+#me{
+    color: lightgray;
+    font-weight: normal;
+    text-align: left;
+    font-family:Arial, sans-serif;
+    font-size: 18px;
+}
+#da{
+    color: lightgray;
+    font-weight: normal;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+/* Responsive Styling for Mevents */
+@media (max-width: 768px) {
+    #Mevents {
+        font-size: 24px; /* Smaller font size for mobile */
+        margin-top: 50px; /* Reduced margin for mobile */
+    }
+}
+
+/* Events container */
+.events-container {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Responsive Styling for Events Container */
+@media (max-width: 768px) {
+    .events-container {
+        padding: 15px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+}
+
+/* Text styles for #me and #da */
+#me, #da {
+    color: lightgray;
+    font-weight: normal;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+/* Responsive Styling for #me and #da */
+@media (max-width: 768px) {
+    #me, #da {
+        font-size: 16px; /* Smaller font size on mobile */
+        text-align: center; /* Center text on smaller screens */
+    }
+}
+
+/* Adjustments for very small screens (mobile) */
+@media (max-width: 480px) {
+    #Mevents {
+        font-size: 20px; /* Further reduce font size */
+        margin-top: 30px; /* Smaller margin */
+    }
+
+    .events-container {
+        padding: 10px; /* Even smaller padding for very small screens */
+    }
+
+    #me, #da {
+        font-size: 14px; /* Smaller text for small screens */
+    }
+}

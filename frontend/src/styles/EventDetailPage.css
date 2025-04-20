@@ -1,0 +1,65 @@
+.event-detail-page {
+    padding: 20px; /* Reduce overall padding */
+    padding-top: 120px; /* Adjust based on navbar height */
+    font-family: Arial, sans-serif;
+}
+
+
+#semi-title {
+    font-size: 18px;
+    color: lightgray;
+}
+
+#title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: lightgray;
+}
+
+#event-date {
+    font-size: 16px;
+    color: lightgray;
+}
+
+.event-details {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+.brochure-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.description-container {
+    flex: 2;
+}
+
+.description {
+    margin: 0;
+    color: lightgray;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.img-container {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.img-container img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+

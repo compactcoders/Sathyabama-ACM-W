@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1b1b2f;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  min-height: 100vh; /* Increased height */
+  background: url('../assets/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 100px 20px; /* Slightly increased padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.667); /* Soft glass effect */
+  border-radius: 20px;
+  padding: 50px 30px; /* Increased padding */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.logo-left,
+.logo-right {
+  flex: 1;
+  min-width: 180px; /* Slightly increased min-width */
+  text-align: center;
+}
+
+.logo-left img{
+  max-width: 150px; /* Increased logo size */
+  height: auto;
+}
+.logo-right img {
+  max-width: 300px; /* Increased logo size */
+  height: auto;
+}
+.hero-text {
+  flex: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem; /* Increased heading size */
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.hero-text h1 span {
+  display: inline-block;
+  color: #800080;
+}
+
+.hero-text p {
+  font-size: 1.4rem;
+  color: #444;
+}
+
+
+
+/* ✅ About Section */
+.about-section {
+  padding: 5rem 10%;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ff00ff, #a258e4, #00ffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-section h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ff00ff, #a258e4, #00ffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-content {
+  max-width: 900px;
+  text-align: justify;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* ✅ Video Section */
+.about-video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 15px;
+  margin-top: 2rem;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+/* ✅ Achievements Section */
+.achievements-section {
+  padding: 5rem 10%;
+  text-align: center;
+}
+
+.achievement-card {
+  background: linear-gradient(135deg, rgba(151, 43, 255, 0.8), rgba(0, 212, 255, 0.8));
+  border-radius: 15px;
+  padding: 2rem;
+  width: 320px;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.achievement-card:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Infinite Scrolling Effect */
+.achievement-slider {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: slide 15s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* ✅ Share Your Thoughts Section */
+.share-thoughts-section {
+  text-align: center;
+  padding: 4rem 10%;
+  background: rgba(255, 255, 255, 0.05); /* Subtle frosted effect */
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  margin: 3rem auto;
+  max-width: 900px;
+}
+
+/* 📝 Heading Styling */
+.share-thoughts-section h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ff00ff, #a258e4, #00ffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+/* 🗣️ Paragraph Styling */
+.share-thoughts-section p {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* 🌟 Feedback Button */
+.feedback-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #8a2be2, #ff00ff);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 15px rgba(138, 43, 226, 0.7);
+}
+
+.feedback-button:hover {
+  background: linear-gradient(90deg, #ff00ff, #8a2be2);
+  transform: scale(1.05);
+  box-shadow: 0px 0px 25px rgba(138, 43, 226, 1);
+}
+
+/* ✅ Footer Styles */
+footer.contact-us {
+  background:linear-gradient(to right, #ff00ff, #a258e4, #00ffff);
+  backdrop-filter: blur(10px);
+  padding: 3rem 10%;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px 20px 0 0;
+  margin-top: 4rem;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+footer.contact-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  background: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer.contact-us .social-icons {
+  margin: 1.5rem 0;
+}
+
+footer.contact-us .social-icons a {
+  font-size: 2rem;
+  margin: 0 15px;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer.contact-us .social-icons a:hover {
+  color: #00ffff;
+  transform: scale(1.2);
+}
+
+footer.contact-us p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+

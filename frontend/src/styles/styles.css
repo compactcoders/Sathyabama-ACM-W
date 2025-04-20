@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* 🌟 Core Team Section */
+.core-team {
+  color: #ffffff;
+  margin-top: 100px; /* Pushes below the navbar */
+  padding: 40px;
+  text-align: center;
+}
+
+/* 🔥 Header with Subtle Glow */
+.core-team h1 {
+  text-align: left;
+  margin-left: 2rem;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  text-shadow: 0px 0px 10px rgba(255, 0, 255, 0.6);
+}
+
+/* ✨ Gradient Text with a Soft Glow */
+.core-team h2, .core-team h3 {
+  text-align: left;
+  margin-left: 15rem;
+  font-family: 'Jersey 25', sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+}
+
+/* 📝 Paragraphs for Better Readability */
+.core-team p {
+  margin-left: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  text-align: justify;
+  max-width: 80%;
+  margin-bottom: 80px;
+}
+
+/* ✨ Gradient Headings */
+.core-team h2 {
+  background: linear-gradient(#ff00ff, #a258e4, #00ffff);
+  -webkit-background-clip: text;
+  background-clip: 0%;
+  -webkit-text-fill-color: transparent;
+}
+
+.core-team h3 {
+  background: linear-gradient(#ffcfff, #d0a6f5, #b6ffff);
+  -webkit-background-clip: text;
+  background-clip: 0%;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 🔷 Member Cards Container */
+.core-category, .faculty-coordinators, .office-bearers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px; /* Slightly increased spacing */
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* 🎨 Glassmorphism Effect for Member Cards */
+.member-card {
+  display: flex;
+  width: 45%;
+  align-items: center;
+  gap: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  padding: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.member-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* 🖼 Profile Picture */
+.member-card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1a1a80;
+  transition: transform 0.3s ease-in-out;
+}
+
+.member-card:hover img {
+  transform: scale(1.08);
+}
+
+/* 📝 Member Info */
+.member-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.member-info h3 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+.member-info p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: #bbbbbb;
+}
+
+/* 🔗 Social Media Links with Hover Effects */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 1.6rem;
+  color: #bbbbbb;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  color: #1a1a80;
+  transform: scale(1.2);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .core-team h1,
+  .core-team h2,
+  .core-team h3 {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .core-team p {
+    text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .member-card {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .member-card img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .member-info {
+    align-items: center;
+  }
+}

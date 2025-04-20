@@ -1,0 +1,221 @@
+.navbar {
+    background-color: transparent;
+    color: white;
+    padding: 5px 16px;
+    position: fixed; /* ✅ Ensures navbar stays at the top */
+    top: 3%;
+    width: 100%;
+    z-index: 1000; /* ✅ Ensures navbar is above all elements */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    padding-top: 5px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the logos */
+}
+
+.logo, .second-logo {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-links li {
+    display: inline;
+    position: relative;
+}
+
+/* ✅ Navbar Links Styling */
+.navbar-links a,
+.navbar-links .dropdown-button {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+    border-radius: 4px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-links a:hover,
+.navbar-links .dropdown-button:hover {
+    text-decoration: underline;
+    color: hsl(0, 0%, 90%);
+}
+
+/* ✅ Dropdown Menu */
+.navbar-links .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8); /* ✅ Dark background for better visibility */
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    z-index: 1100; /* ✅ Ensures dropdown is above all content */
+    min-width: 140px;
+}
+
+/* ✅ Fix: Ensure dropdown is always clickable */
+.navbar-links .dropdown:hover .dropdown-menu,
+.navbar-links .dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+/* ✅ Dropdown Menu Item Styling */
+.navbar-links .dropdown-menu li {
+    padding: 8px 16px;
+}
+
+.navbar-links .dropdown-menu li a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    transition: text-decoration 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links .dropdown-menu li a:hover {
+    text-decoration: underline;
+    color: hsl(0, 0%, 90%);
+}
+
+/* ✅ Fix: Ensure Hero Section Doesn't Block Dropdown */
+.hero-section {
+    position: relative;
+    z-index: 1; /* ✅ Prevents hero from overlapping */
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 16px;
+        height: auto;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar-links a,
+    .navbar-links .dropdown-button {
+        text-align: left;
+        width: 100%;
+    }
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.back-button:hover {
+    color: hsl(0, 0%, 90%);
+}
+.burger-menu {
+    display: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 16px;
+        height: auto;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        z-index: 1101;
+    }
+
+    .navbar-right {
+        display: none;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        padding: 10px 16px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1100;
+        border-top: 1px solid #444;
+    }
+
+    .navbar-right.open {
+        display: block;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar-links a,
+    .navbar-links .dropdown-button {
+        text-align: left;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        background: none;
+        padding-left: 10px;
+    }
+
+    .dropdown-menu li {
+        padding: 6px 0;
+    }
+}

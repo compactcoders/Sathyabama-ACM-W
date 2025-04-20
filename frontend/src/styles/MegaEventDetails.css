@@ -1,0 +1,204 @@
+.megaEvent-detail-page {
+    padding: 20px;
+    padding-top: 120px;
+    font-size: 25px;
+    color: lightgray;
+}
+
+#event-overview {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: lightgray;
+    margin: 5%;
+    line-height: 30px;
+}
+
+#title {
+    font-size: 40px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#semi-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+#event-date {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.day-section {
+    margin-bottom: 40px;
+}
+
+.brochure-description-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.brochure-container {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.brochure-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.day {
+    font-size: 30px;
+    margin: 10px 0;
+    text-decoration: underline gray;
+    text-align: center;
+}
+
+.description-container {
+    flex: 2;
+    margin: auto;
+    padding: 10px;
+}
+
+.desc {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    word-spacing: 5px;
+    line-height: 30px;
+    color: lightgrey;
+    margin: 10px;
+    text-align: justify;
+}
+
+.photos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.day-photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15%;
+    margin-top: 10px;
+}
+
+#glimpse {
+    margin: 15px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: lightgray;
+    text-align: center;
+}
+
+#conc {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    word-spacing: 5px;
+    line-height: 30px;
+    color: lightgrey;
+    margin: 8%;
+    text-align: justify;
+}
+
+.brochure-overview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.brochure-overview-image {
+    flex: 1;
+    max-width: 350px;
+    text-align: center;
+}
+
+.overview-brochure {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Tablets (≤ 768px) */
+@media (max-width: 768px) {
+    .megaEvent-detail-page {
+        padding-top: 100px;
+        font-size: 20px;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+
+    .day {
+        font-size: 24px;
+    }
+
+    #title {
+        font-size: 32px;
+    }
+
+    #semi-title {
+        font-size: 24px;
+    }
+
+    #event-date {
+        font-size: 18px;
+    }
+}
+
+/* Mobile Devices (≤ 480px) */
+@media (max-width: 480px) {
+    .desc {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .brochure-image,
+    .day-photo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .brochure-description-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #title {
+        font-size: 25px;
+    }
+
+    #semi-title {
+        font-size: 20px;
+    }
+
+    #event-date {
+        font-size: 16px;
+    }
+
+    #glimpse,
+    #conc {
+        font-size: 16px;
+    }
+}
