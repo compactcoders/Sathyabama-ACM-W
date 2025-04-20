@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/ACM-W/(.*)",
+      "destination": "/ACM-W/index.html"
+    }
+  ]
+}
