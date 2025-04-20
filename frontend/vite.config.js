@@ -2,6 +2,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/ACM-W/',   // 👈 VERY IMPORTANT for Vercel sub-path
+  base: '/ACM-W/',
   plugins: [react()],
 })
