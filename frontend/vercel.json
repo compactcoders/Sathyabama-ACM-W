@@ -1,8 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/ACM-W/(.*)",
+      "source": "/ACM-W",
       "destination": "/ACM-W/index.html"
+    },
+    {
+      "source": "/ACM-W/(.*)",
+      "destination": "/ACM-W/$1"
     }
   ]
 }
