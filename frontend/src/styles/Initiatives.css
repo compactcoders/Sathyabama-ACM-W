@@ -1,0 +1,117 @@
+.initiatives-page {
+    padding: 100px 5% 2rem;
+    max-width:  1750px;
+    margin: 0 auto;
+    background: #1b1b2f;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  
+  .initiatives-heading {
+    text-align: left;
+  margin-left: 2rem;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  text-shadow: 0px 0px 10px rgba(255, 0, 255, 0.6);
+  text-align: center;
+  }
+  
+  .initiative-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    background: #8d41ea;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .initiative-section:hover {
+    transform: scale(1.01);
+  }
+  
+  .initiative-img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .initiative-details {
+    padding: 2rem;
+  }
+  
+  .initiative-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #600760;
+    margin-bottom: 0.5rem;
+  }
+  
+  .initiative-date {
+    font-size: 0.95rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .initiative-description {
+    font-size: 1.05rem;
+    color: #33fcff;
+    line-height: 1.6;
+  }
+  /* ===================== ANIMATIONS ===================== */
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulseShadow {
+    0%, 100% {
+      text-shadow: 0px 0px 10px rgba(255, 0, 255, 0.6);
+    }
+    50% {
+      text-shadow: 0px 0px 20px rgba(255, 0, 255, 1);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes zoomFadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes glowBorder {
+    0%, 100% {
+      box-shadow: 0 0 15px #ff00ff;
+    }
+    50% {
+      box-shadow: 0 0 25px #ff00ff;
+    }
+  }
+  

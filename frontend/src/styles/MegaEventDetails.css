@@ -1,6 +1,7 @@
 .megaEvent-detail-page {
-    padding: 20px;
-    padding-top: 120px;
+    padding: 100px 5% 2rem;
+    max-width:  1750px;
+    margin: 0 auto;
     font-size: 25px;
     color: lightgray;
 }
@@ -202,3 +203,79 @@
         font-size: 16px;
     }
 }
+/* Animations */
+@keyframes fadeSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes zoomFade {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes floatIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Applying animation */
+  .megaEvent-detail-page {
+    animation: fadeSlideUp 0.6s ease-out;
+  }
+  
+  #title, #semi-title, #event-date {
+    animation: fadeSlideUp 0.8s ease-out;
+  }
+  
+  .day-section {
+    animation: fadeSlideUp 0.8s ease-out;
+  }
+  
+  .brochure-image,
+  .overview-brochure {
+    animation: zoomFade 0.6s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .brochure-image:hover,
+  .overview-brochure:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  .description-container,
+  .desc,
+  #conc,
+  #glimpse {
+    animation: floatIn 0.9s ease-out;
+  }
+  
+  .day-photo {
+    animation: zoomFade 0.6s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .day-photo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+  }
+  

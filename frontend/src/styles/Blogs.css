@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 .blogs-page {
-    max-width: 1200px;
+    padding: 100px 5% 2rem;
+    max-width:  1750px;
     margin: 0 auto;
-    padding: 120px 5% 2rem;
 }
 
 .page-title {
@@ -151,3 +151,62 @@
 .read-link:hover {
     text-decoration: underline;
 }
+
+/* Animations */
+@keyframes fadeSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply Animation Classes */
+  .blogs-page {
+    animation: fadeSlideUp 0.8s ease-out;
+  }
+  
+  .featured-article {
+    animation: scaleIn 0.8s ease-in-out;
+  }
+  
+  .articles-grid .blog-card {
+    animation: fadeSlideUp 0.6s ease-in-out;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+  }
+  
+  /* Optional: Add staggered effect for cards */
+  .articles-grid .blog-card:nth-child(1) { animation-delay: 0.2s; }
+  .articles-grid .blog-card:nth-child(2) { animation-delay: 0.4s; }
+  .articles-grid .blog-card:nth-child(3) { animation-delay: 0.6s; }
+  .articles-grid .blog-card:nth-child(4) { animation-delay: 0.8s; }
+  
+  .categories .category-btn {
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .categories .category-btn:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Subtle image pop on hover */
+  .blog-card:hover {
+    transform: scale(1.015);
+    transition: transform 0.3s ease;
+  }
+  

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/styles.css";
 import MemberCard from "./Membercard";
 import benita from "../assets/benita.png";
@@ -53,6 +53,22 @@ const CoreTeam = () => {
     { name: "Dr.S.Saranya", role: "Assistant Professor", tagline: " Department of Computer Science and Engineering", imageUrl: saranya },
     { name: "Dr.Divya", role: "Assistant Professor", tagline: " Department of Computer Science and Engineering", imageUrl: divya }
   ];
+
+  useEffect(() => {
+    const cards = document.querySelectorAll(".member-card");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    cards.forEach((card) => observer.observe(card));
+  }, []);
 
   return (
     <section className="core-team">

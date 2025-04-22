@@ -2,7 +2,7 @@
 
 .membership-page {
   padding: 100px 5% 2rem;
-  max-width: 1200px;
+  max-width:  1750px;
   margin: 0 auto;
 }
 
@@ -115,4 +115,44 @@
   gap: 2rem;
   margin-top: 2rem;
   justify-content: center;
+}
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.membership-page {
+  animation: fadeUp 1s ease-in-out both;
+}
+
+.content-section,
+.benefit-card {
+  animation: fadeUp 1s ease-in-out both;
+  animation-delay: 0.2s;
+}
+
+.page-title {
+  animation: fadeUp 0.8s ease-out both;
+  animation-delay: 0.1s;
+}
+
+.section-title {
+  animation: fadeUp 1s ease-out both;
+  animation-delay: 0.3s;
+}
+
+.benefits-grid .benefit-card:nth-child(1) {
+  animation-delay: 0.4s;
+}
+.benefits-grid .benefit-card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.benefits-grid .benefit-card:nth-child(3) {
+  animation-delay: 0.8s;
 }

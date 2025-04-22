@@ -1,6 +1,7 @@
 .event-detail-page {
-    padding: 20px; /* Reduce overall padding */
-    padding-top: 120px; /* Adjust based on navbar height */
+    padding: 100px 5% 2rem;
+    max-width:  1750px;
+    margin: 0 auto;
     font-family: Arial, sans-serif;
 }
 
@@ -63,3 +64,61 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes floatInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes imageZoomFade {
+    0% {
+      opacity: 0;
+      transform: scale(0.85);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply animations */
+  .event-detail-page {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .brochure-image {
+    animation: floatInLeft 0.8s ease-out;
+  }
+  
+  .description-container {
+    animation: fadeInUp 0.9s ease-out;
+  }
+  
+  .img-container img {
+    animation: imageZoomFade 0.6s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* On Hover Image Enhancement */
+  .img-container img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+  }
+  

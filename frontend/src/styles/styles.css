@@ -10,7 +10,7 @@
 
 /* 🔥 Header with Subtle Glow */
 .core-team h1 {
-  text-align: left;
+  text-align: center;
   margin-left: 2rem;
   font-family: 'Press Start 2P', sans-serif;
   font-size: 2.5rem;
@@ -171,4 +171,55 @@
   .member-info {
     align-items: center;
   }
+}
+/* 🌟 Core Animation Keyframes */
+@keyframes fadeScaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.6), 0 0 20px rgba(255, 0, 255, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 0, 255, 0.9), 0 0 30px rgba(255, 0, 255, 0.5);
+  }
+}
+
+@keyframes flickerGlow {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0.6;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* ✨ Animations Applied */
+.core-team h1 {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.core-team h2,
+.core-team h3 {
+  animation: flickerGlow 4s infinite ease-in-out;
+}
+
+.member-card {
+  opacity: 0;
+  transform: translateY(40px) scale(0.9);
+}
+
+/* 🔥 Scroll-based animation trigger */
+.member-card.animate {
+  animation: fadeScaleUp 1s ease-out forwards;
 }

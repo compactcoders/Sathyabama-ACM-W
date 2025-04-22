@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faArrowLeft, faBars } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/acm-logo.jpg";
 
+
 const Navbar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,7 +43,9 @@ const Navbar = () => {
                     <li><Link to="/events" onClick={() => setIsMobileMenuOpen(false)}>Events</Link></li>
                     
                     <li><Link to="/core-team" onClick={() => setIsMobileMenuOpen(false)}>Core Team</Link></li>
+                    <li><Link to="/pillars" onClick={() => setIsMobileMenuOpen(false)}>Our Women Pillars</Link></li>
                     <li><Link to="/membership" onClick={() => setIsMobileMenuOpen(false)}>Membership</Link></li>
+                    <li><Link to="/initiatives" onClick={() => setIsMobileMenuOpen(false)}>Initiatives</Link></li>
                     <li><Link to="/testimonials" onClick={() => setIsMobileMenuOpen(false)}>Testimonials</Link></li>
                     <li><Link to="/blogs" onClick={() => setIsMobileMenuOpen(false)}>Blogs</Link></li>
                     <li>

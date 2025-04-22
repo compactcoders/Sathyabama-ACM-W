@@ -12,7 +12,8 @@ import Testimonials from "./components/Testimonials";
 import ShareYourThoughts from "./components/ShareYourThoughts";
 import CoreTeam from "./components/Coreteam";
 import Blogs from "./components/Blogs";
-
+import Pillars from "./components/Pillars"
+import Initiatives from "./components/Initiatives";
 const App = () => {
     const [backendData, setBackendData] = useState(null);
 
@@ -46,10 +47,12 @@ const App = () => {
                 {/* Home Page is the Default Page */}
                 <Route path="/" element={<HomePage />} />
                 <Route path="/events" element={<EventsPage />} />
+                <Route path="/pillars" element={<Pillars />} />
                 <Route path="/mega-events" element={<MegaEventsPage />} />
                 <Route path="/event/:id" element={<EventDetails />} />
                 <Route path="/mega-event/:id" element={<MegaEventDetails />} />
                 <Route path="/membership" element={<MembershipACM />} />
+                <Route path="/initiatives" element={<Initiatives />} />
                 <Route path="/testimonials" element={<Testimonials />} />
                 <Route path="/share-your-thoughts" element={<ShareYourThoughts />} />
                 <Route path="/core-team" element={<CoreTeam />} />
