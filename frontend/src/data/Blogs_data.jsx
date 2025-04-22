@@ -1,23 +1,18 @@
 const blogsData = [
     {
-        title: "ARTICLE NAME-HEADLINE OF AN ARTICLE",
+        title: "Women in Tech",
         link: "#",
-        date: "DATE",
+        date: "Coming Soon!",
     },
     {
-        title: "ARTICLE NAME-HEADLINE OF AN ARTICLE",
+        title: "Role of Women in multiple deciplines",
         link: "#",
-        date: "DATE",
+        date: "Coming Soon!",
     },
     {
-        title: "ARTICLE NAME-HEADLINE OF AN ARTICLE",
+        title: "Women in Society",
         link: "#",
-        date: "DATE",
-    },
-    {
-        title: "ARTICLE NAME-HEADLINE OF AN ARTICLE",
-        link: "#",
-        date: "DATE",
+        date: "Coming Soon!",
     }
 ];
 

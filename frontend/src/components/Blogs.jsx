@@ -12,11 +12,9 @@ const Blogs = () => {
                 <div className="featured-content">
                     <h2 className="featured-title">FEATURED ARTICLE</h2>
                     <p className="featured-text">
-                        Lorem ipsum dolor amet, consectetur adipiscing elit. Torquent taciti ridiculus efficitur magna lectus metus.
-                        Egestas elementum class platea nisi phasellus enim orci nam. Taciti etiam lectus ac porttitor phasellus metus.
-                        Ligula phasellus curabitur porttitor ante posuere. Vivamus laicina fames euismod porttitor quis.
+                    Welcome to the official ACM-W blog, a space dedicated to empowering women in the field of computing. Our blog highlights inspiring stories, groundbreaking research, emerging technologies, and the accomplishments of women making a mark in the tech world. From interviews with trailblazing leaders to advice on navigating the tech industry, ACM-W blogs offer valuable insights, mentorship, and resources to support women in their academic and professional journeys. Whether you're a student, a professional, or just passionate about tech, our blog provides a platform to stay informed, inspired, and connected with a global community of women in computing.
                     </p>
-                    <button className="read-btn">READ NOW</button>
+                    <button className="read-btn">Coming Soon!</button>
                 </div>
                 <div className="featured-image"></div>
             </section>
@@ -24,9 +22,6 @@ const Blogs = () => {
             {/* Categories */}
             <div className="categories">
                 <button className="category-btn active">ALL ARTICLES</button>
-                <button className="category-btn">CATEGORY 1</button>
-                <button className="category-btn">CATEGORY 2</button>
-                <button className="category-btn">CATEGORY 3</button>
             </div>
 
             {/* Articles Grid */}
