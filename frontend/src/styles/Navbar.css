@@ -220,8 +220,11 @@
     }
 }
 /* Navbar Link Hover with Glowing Box (Blue Shades) */
-.navbar-links a:hover,
-.navbar-links .dropdown-button:hover {
+/* Add the active class to mimic hover effect */
+.navbar-links a.active,
+.navbar-links a.active:hover,
+.navbar-links .dropdown-button.active,
+.navbar-links .dropdown-button.active:hover {
     color: white; /* Text color */
     background-color: rgba(0, 0, 255, 0.2); /* Semi-transparent blue background color */
     border-radius: 4px; /* Optional: round the corners of the box */
@@ -230,12 +233,3 @@
     transition: background-color 0.3s ease, color 0.3s ease, text-shadow 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
-/* Dropdown Menu Item Hover with Glowing Box (Blue Shades) */
-.navbar-links .dropdown-menu li a:hover {
-    color: white;
-    background-color: rgba(0, 0, 255, 0.2); /* Semi-transparent blue background */
-    border-radius: 4px; /* Optional: round the corners of the box */
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.7), 0 0 20px rgba(0, 0, 255, 0.7); /* Glowing blue box effect */
-    text-shadow: 0 0 10px rgba(0, 0, 255, 0.7), 0 0 20px rgba(0, 0, 255, 0.7); /* Glowing blue text effect */
-    transition: background-color 0.3s ease, color 0.3s ease, text-shadow 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-}
