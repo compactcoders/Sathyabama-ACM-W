@@ -39,15 +39,8 @@ const Navbar = () => {
             <div className={`navbar-right ${isMobileMenuOpen ? "open" : ""}`}>
                 <ul className="navbar-links">
                     <li><Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link></li>
-                    <li className="dropdown">
-                        <button className="dropdown-button" onClick={toggleDropdown}>Events</button>
-                        {isDropdownOpen && (
-                            <ul className="dropdown-menu">
-                                <li><Link to="/events" onClick={() => setIsMobileMenuOpen(false)}>Monthly Events</Link></li>
-                                <li><Link to="/mega-events" onClick={() => setIsMobileMenuOpen(false)}>Mega Events</Link></li>
-                            </ul>
-                        )}
-                    </li>
+                    <li><Link to="/events" onClick={() => setIsMobileMenuOpen(false)}>Events</Link></li>
+                    
                     <li><Link to="/core-team" onClick={() => setIsMobileMenuOpen(false)}>Core Team</Link></li>
                     <li><Link to="/membership" onClick={() => setIsMobileMenuOpen(false)}>Membership</Link></li>
                     <li><Link to="/testimonials" onClick={() => setIsMobileMenuOpen(false)}>Testimonials</Link></li>

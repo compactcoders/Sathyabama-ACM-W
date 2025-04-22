@@ -98,8 +98,34 @@ import dayPhotos14_3 from "../assets/images/horizon-2024/channel-surfing/channel
 
 import horizon from "../assets/images/horizon-2024/horizon.jpg"
 import sheroic_Week from "../assets/images/sheroic-week-2024/sheroic-week-brochure.jpg"
+import shero_25 from "../assets/images/shero-25/main-bro.jpg"
 
+import bro1 from "../assets/images/shero-25/day1/0-Day1.jpg"
+import bro2 from "../assets/images/shero-25/day2/0-Day2.jpg"
 
+import es1 from "../assets/images/shero-25/day1/escape/es1.jpg"
+import es2 from "../assets/images/shero-25/day1/escape/es2.jpg"
+
+import pan1 from "../assets/images/shero-25/day1/pannel/pan1.jpg"
+import pan2 from "../assets/images/shero-25/day1/pannel/pan2.jpg"
+
+import tal1 from "../assets/images/shero-25/day1/talent/tal1.jpg"
+import tal2 from "../assets/images/shero-25/day1/talent/tal3.jpg"
+
+import wall1 from "../assets/images/shero-25/day1/wall/wal1.jpg"
+
+import ai1 from "../assets/images/shero-25/day2/ai/ai1.jpg"
+import deb1 from "../assets/images/shero-25/day2/debate/deb1.jpg"
+import pic1 from "../assets/images/shero-25/day2/photo/pic1.jpg"
+import stall1 from "../assets/images/shero-25/day2/stall/stall1.jpg"
+import symp1 from "../assets/images/shero-25/day2/symphony/symp1.jpg"
+import tall1 from "../assets/images/shero-25/day2/talk/tal2.jpg"
+
+import val1 from "../assets/images/shero-25/validictory/val1.png"
+import val2 from "../assets/images/shero-25/validictory/val2.png"
+import val3 from "../assets/images/shero-25/validictory/val3.png"
+import val4 from "../assets/images/shero-25/validictory/val4.png"
+import val5 from "../assets/images/shero-25/validictory/val5.png"
 
 const megaEvents = [
     {
@@ -367,7 +393,76 @@ const megaEvents = [
             ]
         },
 
+    }, 
+    {
+        id: 3,
+        name: "SHEROIC WEEK 2025",
+        date: "06-03-2025 - 08-03-2025",
+        brochure: shero_25 ,
+        overview: "The Department of Computer Science and Engineering, in association with the\n" +
+            "ACM-W Student Chapter, hosted a week-long festivity spanning from March\n" +
+            "tth to March 8th, 2025, in tribute to International Women's Day. This event\n" +
+            "was designed to honor the exceptional accomplishments of women and\n" +
+            "cultivate an environment of empowerment and inclusiveness. Each day of the\n" +
+            "celebration was distinguished by a unique color code, contributing to the\n" +
+            "lively ambiance, and interactive features such as selfie stations were integrated\n" +
+            "to actively involve attendees. The week encompassed a blend of technical and\n" +
+            "cultural events aimed at bolstering student leadership capabilities and\n" +
+            "fostering empowerment. ",
+        day1: "Day 1: InHERitance",
+        description1: "March 4, 2024 - InHERitance (Green Day):On March 4, the event marked the beginning of the Women's Day\n" +
+            "Celebration Week with an inaugural ceremony. This ceremony included a\n" +
+            "video presentation honoring the impactful women and acknowledging their\n" +
+            "contributions at Sathyabama. Additionally, students shared their insights on\n" +
+            "\"HerStory: Tales of Triumphs and Tenacity\" during the event, followed by\n" +
+            "engaging activities for the attendees. The agenda for the week-long festivities\n" +
+            "was elaborated upon, setting the tone for the upcoming events. ",
+        day2: "Day 2: SHErise",
+        description2: "March 5, 2024 - SHERise (Blue Day):On March 5th, as part of the\n" +
+            "\"SheRise (Blue Day)\" event, the spotlight was on women empowerment in\n" +
+            "technology. A dedicated tech talk was organized to delve into the challenges\n" +
+            "and triumphs encountered by women in the tech sector. Mrs. Varsha Chhabria, the Associate Director of Product Management at Wolters Kluwer ELM\n" +
+            "Solutions, Chennai, delivered an influential address, motivating attendees to\n" +
+            "embrace opportunities within the tech industry and advocate for gender\n" +
+            "diversity and inclusion. Participants provided glowing feedback for the\n" +
+            "motivational and inspiring talk given during the SHERise event. They praised\n" +
+            "the talk for its ability to uplift and empower, highlighting its motivational\n" +
+            "content and its relevance to their experiences in the tech industry. Overall, the\n" +
+            "talk was widely acclaimed for its positive impact and resonated deeply with\n" +
+            "the audience, leaving them inspired and motivated to embrace their potential\n" +
+            "in the tech industry.\n",
+        conclusion: "The event provided a platform for female students to express themselves, showcase their talents, and develop confidence in their abilities, fostering a\n" +
+            "sense of empowerment among participants. More than 1500 students actively\n" +
+            "participated and benefited in the various events throughout the\n" +
+            "week. Through workshops, seminars, and competitions, students had the\n" +
+            "opportunity to enhance their technical, creative, and leadership skills, preparing them for future academic and professional endeavors. Inspirational\n" +
+            "talks and discussions by accomplished professionals served as sources of\n" +
+            "motivation and inspiration, encouraging students to pursue their goals with\n" +
+            "determination and resilience .Discussions on important topics such as gender\n" +
+            "equality, women's leadership, and societal challenges raised awareness and\n" +
+            "promoted dialogue among students, encouraging critical thinking and\n" +
+            "reflection. Indeed, the SHEroic Week served as a much-needed event for\n" +
+            "students, providing both knowledge enrichment and stress relief. Overall, the SHEroic Week served as a holistic platform for students, offering a\n" +
+            "balance of educational enrichment, stress relief, personal growth, and\n" +
+            "motivation, with far-reaching positive outcomes that extend well beyond the\n" +
+            "event itself.\n ",
+    
+    brochureImages: [
+        bro1,bro2,shero_25
+     ],
+     dayPhotos: {
+         day1: [
+             es1,es2,pan1,pan2,tal1,tal2,wall1
+         ],
+         day2: [
+             ai1,deb1,pic1,stall1,symp1,tall1
+         ],
+         day3: [
+            val1,val2,val3,val4,val5
+         ],
+     },
     }
 ];
+
 
 export default megaEvents;
