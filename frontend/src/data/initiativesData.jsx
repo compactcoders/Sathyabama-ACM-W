@@ -2,7 +2,7 @@
 
 import codeHerImage from "../assets/images/initiatives/codeher.JPG";
 import techTalksImage from "../assets/images/initiatives/techtalks.JPG";
-import sheBuildsImage from "../assets/images/initiatives/shebuilds.JPG";
+import sheBuildsImage from "../assets/images/initiatives/pic3.png";
 
 export const initiativesData = [
   {
