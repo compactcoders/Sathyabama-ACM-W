@@ -45,17 +45,20 @@ const Navbar = () => {
                         <Link to="/" className={isActiveLink("/")}>Home</Link>
                     </li>
                     <li>
-                        <Link to="/events" className={isActiveLink("/events")}>Events</Link>
+                        <Link to="/pillars" className={isActiveLink("/pillars")}>Our Women Pillars</Link>
                     </li>
                     <li>
                         <Link to="/core-team" className={isActiveLink("/core-team")}>Core Team</Link>
                     </li>
                     <li>
-                        <Link to="/pillars" className={isActiveLink("/pillars")}>Our Women Pillars</Link>
-                    </li>
-                    <li>
                         <Link to="/membership" className={isActiveLink("/membership")}>Membership</Link>
                     </li>
+                    <li>
+                        <Link to="/events" className={isActiveLink("/events")}>Events</Link>
+                    </li>
+                    
+                    
+                    
                     <li>
                         <Link to="/initiatives" className={isActiveLink("/initiatives")}>Initiatives</Link>
                     </li>

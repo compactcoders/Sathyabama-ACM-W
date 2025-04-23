@@ -2,7 +2,7 @@
 
 import chancellorImg from "../assets/images/pillars/chancellor1.png";
 import viceChancellorImg from "../assets/images/pillars/vp2.jpeg";
-import vpMamImg from "../assets/images/pillars/vp1.jpeg";
+import vpMamImg from "../assets/images/pillars/vpppp.jpg";
 
 export const pillarsData = [
   {

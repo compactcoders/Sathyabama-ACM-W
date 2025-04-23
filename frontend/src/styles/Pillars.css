@@ -45,6 +45,7 @@
   }
   
   .pillar-content {
+    
     max-width: 600px;
     margin: 1rem;
     text-align: left;
@@ -64,6 +65,7 @@
   }
   
   .pillar-description {
+    text-align: justify;
     font-size: 1rem;
     color: white;
     line-height: 1.6;
