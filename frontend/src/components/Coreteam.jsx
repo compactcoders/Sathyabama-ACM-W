@@ -33,7 +33,7 @@ const CoreTeam = () => {
     ],
     Technical: [
       { name: "Ms.Renusri", role: "Technical Lead", tagline: "The architect of innovative solutions in tech.", imageUrl: renusri, linkedinUrl: "https://www.linkedin.com/in/renusri-s-413938246", instagramUrl: "https://www.instagram.com/renusris_01" },
-      { name: "Ms.Priyadarshini", role: "Technical Co-lead", tagline: "Pioneering innovative solutions, one code at a time.", imageUrl: priya, linkedinUrl: "http://www.linkedin.com/in/priyadharshini-r-9a756a288", instagramUrl: "https://www.instagram.com/prrriiiyaaa_" },
+      { name: "Ms.Priyadharshini", role: "Technical Co-lead", tagline: "Pioneering innovative solutions, one code at a time.", imageUrl: priya, linkedinUrl: "http://www.linkedin.com/in/priyadharshini-r-9a756a288", instagramUrl: "https://www.instagram.com/prrriiiyaaa_" },
     ],
     Content: [
       { name: "Ms.Virutika", role: "Content Lead", tagline: "Transforming ideas into engaging content.", imageUrl: virutika, linkedinUrl: "https://www.linkedin.com/in/virutika-pugazhendhi-7699482a0", instagramUrl: "https://www.instagram.com/_.virutika._" },
