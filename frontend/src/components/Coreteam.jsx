@@ -41,7 +41,7 @@ const CoreTeam = () => {
     ],
     Design: [
       { name: "Ms.Janapriya", role: "Design Lead", tagline: "Crafting vision that brings ideas to life.", imageUrl: janapriya, linkedinUrl: "https://www.linkedin.com/in/janapriya-s-11j01" },
-      { name: "Ms.Paveethra", role: "Design Co-lead", tagline: "Design solutions that inspire and elevate.", imageUrl: paveethra, linkedinUrl: "https://www.linkedin.com/in/pavethraa09", instagramUrl: "https://www.instagram.com/invites/contact" },
+      { name: "Ms.Pavethraa", role: "Design Co-lead", tagline: "Design solutions that inspire and elevate.", imageUrl: paveethra, linkedinUrl: "https://www.linkedin.com/in/pavethraa09", instagramUrl: "https://www.instagram.com/invites/contact" },
     ],
     Media: [
       { name: "Ms.Koushika", role: "Media Lead", tagline: "The intersection of media and creativity", imageUrl: koushika, linkedinUrl: "https://www.linkedin.com/in/koushika-ramesh-b70a78315" },
