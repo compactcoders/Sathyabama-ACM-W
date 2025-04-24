@@ -6,7 +6,7 @@ import vpMamImg from "../assets/images/pillars/vpppp.jpg";
 
 export const pillarsData = [
   {
-    name: "Dr. Marianzeena Johnson",
+    name: "Dr. Mariazeena Johnson",
     title: "CHANCELLOR",
     image: chancellorImg,
     description:
